@@ -119,3 +119,6 @@ background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, F
     flex-direction: column;
   }
 }
+.particles-bg-canvas-self{
+  /* background: #000; */
+}
