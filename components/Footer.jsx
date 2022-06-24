@@ -10,40 +10,39 @@ import { AiOutlineCopyrightCircle } from 'react-icons/ai'
 const dateToFormat = new Date();
 const Footer = () => {
     return (
-        <footer className='flex justify-center items-center p-4'>
-            <AiOutlineCopyrightCircle className='text-white' />
-            
+        <footer className='flex justify-center items-center p-4'>         
             <div className='flex flex-row justify-between'>
-                <p className='text-white'>Copyright <Moment format="YYYY" date={dateToFormat} /></p>
-                <p className='text-xl text-white'><a href="
+                <AiOutlineCopyrightCircle className='text-white ' />
+                <p className='text-white my-2'>Copyright <Moment format="YYYY" date={dateToFormat} /></p>
+                <p className='text-xl text-white m-2'><a href="
 
         " className='text-blue-500 hover:text-blue-700'>
                     <FaFacebook className='text-xl text-white' />
                     <span className='ml-2'>
                         <span className='font-bold'>    </span>
                     </span>     </a></p>
-                <p className='text-xl text-white'> <a href="
+                <p className='text-xl text-white m-2'> <a href="
 
         " className='text-blue-500 hover:text-blue-700'>
                     <FaTwitter className='text-xl text-white' />
                     <span className='ml-2'>
                         <span className='font-bold'>    </span>
                     </span>     </a></p>
-                <p className='text-xl text-white'> <a href="
+                <p className='text-xl text-white m-2'> <a href="
 
         " className='text-blue-500 hover:text-blue-700'>
                     <FaLinkedin className='text-xl text-white' />
                     <span className='ml-2'>
                         <span className='font-bold'>    </span>
                     </span>     </a></p>
-                <p className='text-xl text-white'> <a href="
+                <p className='text-xl text-white m-2'> <a href="
 
         " className='text-blue-500 hover:text-blue-700'>
                     <FaGithub className='text-xl text-white' />
                     <span className='ml-2'>
                         <span className='font-bold'>    </span>
                     </span>     </a></p>
-                <p className='text-xl text-white'> <a href="
+                <p className='text-xl text-white m-2'> <a href="
 
         " className='text-blue-500 hover:text-blue-700'>
                     <FaWhatsapp className='text-xl text-white' />

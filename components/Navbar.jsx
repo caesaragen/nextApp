@@ -42,7 +42,7 @@ const Navbar = () => {
                         flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in
                         '           
                     >
-                        <li className='text-xl w-full my-2'>
+                        <li className='text-xl  my-2'>
 
                             <AiOutlineClose onClick={() => setToggleMenu(false)} />
                         </li>
