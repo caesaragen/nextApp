@@ -41,7 +41,7 @@ export default function Home() {
     });
   }
   return (
-    <div className="md:container md:mx-auto flex">
+    <div className="md:container md:mx-auto flex ">
       {/* <ParticlesBg type="custom" config={config} bg={{
         position: "absolute",
         zIndex: 999,

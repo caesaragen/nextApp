@@ -7,6 +7,7 @@ import { FaTwitter } from 'react-icons/fa';
 import { FaFacebook } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import { AiOutlineCopyrightCircle } from 'react-icons/ai'
+import Link from 'next/link'
 const dateToFormat = new Date();
 const Footer = () => {
     return (
@@ -28,20 +29,13 @@ const Footer = () => {
                     <span className='ml-2'>
                         <span className='font-bold'>    </span>
                     </span>     </a></p>
-                <p className='text-xl text-white m-2'> <a href="
-
-        " className='text-blue-500 hover:text-blue-700'>
-                    <FaLinkedin className='text-xl text-white' />
-                    <span className='ml-2'>
-                        <span className='font-bold'>    </span>
-                    </span>     </a></p>
-                <p className='text-xl text-white m-2'> <a href="
-
-        " className='text-blue-500 hover:text-blue-700'>
-                    <FaGithub className='text-xl text-white' />
-                    <span className='ml-2'>
-                        <span className='font-bold'>    </span>
-                    </span>     </a></p>
+                <a href="https://www.linkedin.com/in/joel-aduma/" target={"_blank"} rel={"noreferrer"}>
+                        <FaLinkedin className='text-xl text-white m-2' />
+                    </a>
+    
+                <a href="https://github.com/caesaragen" target={"_blank"} rel={"noreferrer"}>
+                    <FaGithub className='text-xl text-white m-2' />
+                </a>
                 <p className='text-xl text-white m-2'> <a href="
 
         " className='text-blue-500 hover:text-blue-700'>
