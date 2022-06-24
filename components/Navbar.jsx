@@ -7,30 +7,36 @@ import Link from 'next/link'
 
 const NavbarItem = ({ title, classProps }) => {
     return (
+        // if title is Github, then link to https://github.com/caesaragen else link to `/${title.toLowerCase()}`
+        <Link href={title === "GitHub" ? " https://github.com/caesaragen " : `/${title.toLowerCase()}`} >
         <li className={`mx-4 cursor-pointer text-dark ${classProps}`}>
             {title}
-        </li>
+            </li>
+        </Link>
     )
 }
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
     return (
-        <nav className='w-full flex md:justify-center justify-between items-center p-4'>
+        <nav className='w-full flex md:justify-center justify-around items-center p-4 sticky top-0 z-50'>
             {/* create responsive tailwind navbar*/}
             <div className='md:flex-[0.5] flex-initial justify-center items-center'>
                 <span className='flex justify-center items-center'>
-                    <Image src={profilePic} alt="logo" className='object-cover h-48 w-96 cursor-pointer rounded-lg' width={50}
-                        height={50} />
-                    <h1 className='text-2xl font-bold text-white ml-4'>Joel Aduma </h1>
+                    <Link href='/'>
+                    <Image src={profilePic} alt="logo" className='object-cover h-48 w-48 cursor-pointer rounded-full' width={50}
+                            height={50} />
+                    </Link>
+                        <h1 className='text-2xl font-bold text-white ml-4'>Joel Aduma </h1>
+                    
                 </span>
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-                {["About", "Projects", "GitHub", "LinkedIn", "Tutorials"].map((item, index) =>
+                {["About", "Projects", "GitHub", "LinkedIn"].map((item, index) =>
                     <NavbarItem key={item + index} title={item} />
                 )}
-                <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover[#2546bd]'>
+                {/* <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover[#2546bd]'>
                     Login
-                </li>
+                </li> */}
             </ul>
             <div className='flex relative'>
                 {toggleMenu
