@@ -3,6 +3,7 @@ import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import Image from 'next/image';
 import profilePic from '../public/profilePic.jpg';
+import Link from 'next/link'
 
 const NavbarItem = ({ title, classProps }) => {
     return (
