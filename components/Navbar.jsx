@@ -3,6 +3,7 @@ import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import Image from 'next/image';
 import profilePic from '../public/profilePic.jpg';
+import Link from 'next/link'
 
 const NavbarItem = ({ title, classProps }) => {
     return (
@@ -42,7 +43,7 @@ const Navbar = () => {
                         flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in
                         '           
                     >
-                        <li className='text-xl w-full my-2'>
+                        <li className='text-xl  my-2'>
 
                             <AiOutlineClose onClick={() => setToggleMenu(false)} />
                         </li>
