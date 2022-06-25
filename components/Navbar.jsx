@@ -32,7 +32,7 @@ const Navbar = () => {
                 </span>
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-                {["About", "Projects", "GitHub", "LinkedIn"].map((item, index) =>
+                {[ "Projects", "GitHub", "LinkedIn"].map((item, index) =>
                     <NavbarItem key={item + index} title={item} />
                 )}
                 {/* <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover[#2546bd]'>
@@ -54,7 +54,7 @@ const Navbar = () => {
 
                             <AiOutlineClose onClick={() => setToggleMenu(false)} />
                         </li>
-                        {["About", "Projects", "GitHub", "LinkedIn",].map((item, index) =>
+                        {[ "Projects", "GitHub", "LinkedIn",].map((item, index) =>
                             <NavbarItem key={item + index} title={item} classProps="my-2 text-lg" />
                         )}
                     </ul>

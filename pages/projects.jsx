@@ -36,7 +36,7 @@ let projectsList = [
 ]
 const ProjectCard = ({ title, description, image }) => {
     return (
-        <div className="md:w-[100rem] md:h-[40rem] w-[20.5rem] h-[40rem] p-4 rounded-2xl  dark:bg-slate-800 shadow-lg dark:shadow-slate-700 flex flex-col ease-linear duration-300 md:flex-row">
+        <div className="md:w-[100rem] md:h-[40rem] w-[20.5rem] h-[40rem] p-4 rounded-2xl  dark:bg-slate-800 shadow-lg dark:shadow-slate-700 flex flex-col ease-linear duration-300 md:flex-row items-center justify-center">
             <div className=" h-full w-full  shadow-md rounded-2xl basis-2/3 relative">
                 <div className=" text-white z-10 bg-[#5865F2] absolute pl-8 pr-8 pb-2 pt-2  rounded-tl-2xl rounded-br-2xl font-semibold">
                     <h1>{title}</h1>

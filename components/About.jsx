@@ -3,7 +3,7 @@ import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 import { FaBootstrap, FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
-import { FaFacebook } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 import { FaWhatsapp } from 'react-icons/fa';
 import Image from "next/image";
 import profilePic from '../public/profilePic.jpg';
@@ -49,6 +49,13 @@ const About = ({ toggle, setToggle }) => {
                 <h1 className="m-2 text-4xl font-bold dark:text-white">
                     Software Developer
                 </h1>
+                <ul className='flex flex-wrap'>
+                    <li className='flex items-center m-2'> 
+                        <a href="mailto:caesaragen@gmail.com" target={"_blank"} rel={"noreferrer"}><SiGmail className='text-2xl mr-5 hover:animate-bounce' color="red"/></a>
+                        <a href="https://www.linkedin.com/in/joel-aduma"  target={"_blank"} rel={"noreferrer"}><FaLinkedin className='text-2xl mr-5 hover:animate-bounce' color="#61DBFB"/></a>
+                        <a href="https://wa.me/+254707571076"  target={"_blank"} rel={"noreferrer"}><FaWhatsapp className='text-2xl mr-5 hover:animate-bounce'color="green" /></a>
+                    </li>
+                </ul>
                 <p className="m-2 text-lg text-white">
                     I am a software developer with a keen eye for building custom components to match designs and client expectations.
                 </p>
@@ -56,39 +63,39 @@ const About = ({ toggle, setToggle }) => {
                     I am experienced in:
                 </p>
                 <ul className='flex flex-wrap'>
-                    <li className="m-2 text-lg text-white flex  items-center">
+                    <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
                         <FaHtml5 className="mr-2" color="#61DBFB" />
                         HTML5
                     </li>
-                    <li className="m-2 text-lg text-white flex  items-center">
+                    <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
                         <FaCss3 className="" color="#61DBFB" />
                         CSS3
                     </li>
-                    <li className="m-2 text-lg text-white flex  items-center">
+                    <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
                         <FaJs className="mr-2" color="yellow" />
                         Javascript
                     </li>
-                    <li className="m-2 text-lg text-white flex  items-center">
+                    <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
                         <FaReact className="mr-2" color="#61DBFB" />
                         React
                     </li>
-                    <li className="m-2 text-lg text-white flex  items-center">
+                    <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
                         <FaNodeJs className="mr-2" color="green" />
                         NodeJS
                     </li>
-                    <li className="m-2 text-lg text-white flex  items-center">
+                    <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
                         <FaPhp className="mr-2" color="#61DBFB" />
                         PHP
                     </li>
-                    <li className="m-2 text-lg text-white flex  items-center">
+                    <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
                         <FaLaravel className="mr-2" color="red" />
                         Laravel
                     </li>
-                    <li className="m-2 text-lg text-white flex  items-center">
+                    <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
                         <FaBootstrap className="mr-2" color="#61DBFB" />
                         Bootstrap
                     </li>
-                    <li className="m-2 text-lg text-white flex  items-center">
+                    <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
                         <SiTailwindcss className="mr-2" color="#61DBFB" />
                         Tailwind
                     </li>
