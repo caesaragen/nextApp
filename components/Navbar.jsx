@@ -3,6 +3,7 @@ import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import Image from 'next/image';
 import profilePic from '../public/profilePic.jpg';
+import logopic from '../public/logopic.jpg';
 import Link from 'next/link'
 
 const NavbarItem = ({ title, classProps }) => {
@@ -23,7 +24,7 @@ const Navbar = () => {
             <div className='md:flex-[0.5] flex-initial justify-center items-center'>
                 <span className='flex justify-center items-center'>
                     <Link href='/'>
-                    <Image src={profilePic} alt="logo" className='object-cover h-48 w-48 cursor-pointer rounded-full' width={50}
+                    <Image src={logopic} alt="logo" className='object-cover h-78 w-48 cursor-pointer rounded-full' width={50}
                             height={50} />
                     </Link>
                         <h1 className='text-2xl font-bold text-white ml-4'>Joel Aduma </h1>
@@ -31,7 +32,7 @@ const Navbar = () => {
                 </span>
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-                {["About", "Projects", "GitHub", "LinkedIn"].map((item, index) =>
+                {[ "Projects", "GitHub", "LinkedIn"].map((item, index) =>
                     <NavbarItem key={item + index} title={item} />
                 )}
                 {/* <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover[#2546bd]'>
@@ -53,7 +54,7 @@ const Navbar = () => {
 
                             <AiOutlineClose onClick={() => setToggleMenu(false)} />
                         </li>
-                        {["About", "Projects", "GitHub", "LinkedIn",].map((item, index) =>
+                        {[ "Projects", "GitHub", "LinkedIn",].map((item, index) =>
                             <NavbarItem key={item + index} title={item} classProps="my-2 text-lg" />
                         )}
                     </ul>
