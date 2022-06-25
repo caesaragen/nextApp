@@ -3,6 +3,7 @@ import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import Image from 'next/image';
 import profilePic from '../public/profilePic.jpg';
+import logopic from '../public/logopic.jpg';
 import Link from 'next/link'
 
 const NavbarItem = ({ title, classProps }) => {
@@ -23,7 +24,7 @@ const Navbar = () => {
             <div className='md:flex-[0.5] flex-initial justify-center items-center'>
                 <span className='flex justify-center items-center'>
                     <Link href='/'>
-                    <Image src={profilePic} alt="logo" className='object-cover h-48 w-48 cursor-pointer rounded-full' width={50}
+                    <Image src={logopic} alt="logo" className='object-cover h-78 w-48 cursor-pointer rounded-full' width={50}
                             height={50} />
                     </Link>
                         <h1 className='text-2xl font-bold text-white ml-4'>Joel Aduma </h1>

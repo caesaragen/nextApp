@@ -7,6 +7,7 @@ import { FaFacebook } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 import Image from "next/image";
 import profilePic from '../public/profilePic.jpg';
+import profile from '../public/profile.jpg';
 import { FaReact } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss } from "react-icons/si";
 import { AiOutlineClockCircle } from "react-icons/ai";
@@ -34,7 +35,7 @@ const About = ({ toggle, setToggle }) => {
                 </div>
                 <div className="h-full w-full relative border-2 border-white rounded-2xl">
                     <Image
-                        src={profilePic}
+                        src={profile}
                         alt="thumbnail"
                         layout="fill"
                         objectFit="cover"
