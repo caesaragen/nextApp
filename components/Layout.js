@@ -56,9 +56,9 @@ const Layout = ({ children }) => {
             <main className={styles.main}>
                 <ParticlesBg type="custom" config={config} bg={{
                     position: "absolute",
-                    zIndex: 999,
+                    
                 }} />
-                <body style={{ zIndex:1000 }}>
+                <body>
                     {children} 
               </body>
                 
