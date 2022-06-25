@@ -11,32 +11,32 @@ import acc from '../public/acc.png';
 let projectsList = [
     {
         title: "AMLA",
-        description: "Amla Home is a website for the Amla Foundation. It is a responsive website that is built with Next.js and styled with TailwindCSS.",
+        description: "AMLA project is being implemented in partnership with the African Legal Support Facility of the African Development Bank and the African Union Commission, in coordination with several African Universities. It is a responsive website that is built with Laravel and styled with Bootsrap.",
         image: amlaorg,
         link: "https://amla.org/",
     },
     {
-        title: "AFAA",
-        description: "Amla Media is a website for the Amla Foundation. It is a responsive website that is built with Next.js and styled with TailwindCSS.",
+        title: "African Arbitration Legislation Atlas",
+        description: "The African Arbitration Legislation (AAL) holds arbitration laws of African countries. It is a tool that has interactive and comparative features. I was the lead frontend developer for the project, using technologies such as Laravel/PHP, JavaScript, HTML/CSS, Bootstrap and JQuery.",
         image: comparison,
-        link: "https://amlamedia.org/",
+        link: "https://africanarbitrationatlas.org/atlas/",
     },
     {
         title: "Advocacy Accelerator",
-        description: "Amla.org is a website for the Amla Foundation. It is a responsive website that is built with Next.js and styled with TailwindCSS.",
+        description: "Challenging Patriarchy is a Platform designed for young feminists ni East Africa. It is a responsive website that is built with  Laravel/PHP, JavaScript, HTML/CSS, Bootstrap and JQuery..",
         image: acc,
-        link: "https://amla.org/",
+        link: "https://challengingpatriarchy.advocacyaccelerator.org/",
     },
     {
         title: "Reduce My Carbon",
-        description: "Amla.org is a website for the Amla Foundation. It is a responsive website that is built with Next.js and styled with TailwindCSS.",
+        description: "Reduce my CO2 is a mobile App built using React Native and Consuming API end points built in Laravel",
         image: reduce,
         link: "https://amla.org/",
     }
 ]
 const ProjectCard = ({ title, description, image }) => {
     return (
-        <div className="md:w-[100rem] md:h-[40rem] w-[20.5rem] h-[40rem] p-4 rounded-2xl bg-white dark:bg-slate-800 shadow-lg dark:shadow-slate-700 flex flex-col ease-linear duration-300 md:flex-row">
+        <div className="md:w-[100rem] md:h-[40rem] w-[20.5rem] h-[40rem] p-4 rounded-2xl  dark:bg-slate-800 shadow-lg dark:shadow-slate-700 flex flex-col ease-linear duration-300 md:flex-row">
             <div className=" h-full w-full  shadow-md rounded-2xl basis-2/3 relative">
                 <div className=" text-white z-10 bg-[#5865F2] absolute pl-8 pr-8 pb-2 pt-2  rounded-tl-2xl rounded-br-2xl font-semibold">
                     <h1>{title}</h1>
@@ -80,9 +80,9 @@ const projects = () => {
                     )
                 }
                 )}
-                <button className="bg-white text-white font-bold rounded-2xl p-2">
+                {/* <button className="bg-white text-white font-bold rounded-2xl p-2">
                     Next Project
-                </button>
+                </button> */}
             </div>
         </div>
 
