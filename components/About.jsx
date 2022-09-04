@@ -9,7 +9,7 @@ import Image from "next/image";
 import profilePic from '../public/profilePic.jpg';
 import profile from '../public/profile.jpg';
 import { FaReact } from "react-icons/fa";
-import { SiTypescript, SiTailwindcss } from "react-icons/si";
+import { SiTypescript, SiTailwindcss, SiWordpress } from "react-icons/si";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { VscChecklist } from "react-icons/vsc";
 import { FaPlay } from "react-icons/fa";
@@ -64,11 +64,11 @@ const About = ({ toggle, setToggle }) => {
                 </p>
                 <ul className='flex flex-wrap'>
                     <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
-                        <FaHtml5 className="mr-2" color="#61DBFB" />
+                        <FaHtml5 className="mr-2" color="#e34c26" />
                         HTML5
                     </li>
                     <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
-                        <FaCss3 className="" color="#61DBFB" />
+                        <FaCss3 className="" color="#2965f1" />
                         CSS3
                     </li>
                     <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
@@ -98,6 +98,10 @@ const About = ({ toggle, setToggle }) => {
                     <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
                         <SiTailwindcss className="mr-2" color="#61DBFB" />
                         Tailwind
+                    </li>
+                    <li className="m-2 text-lg text-white flex  items-center hover:scale-125">
+                        <SiWordpress className="mr-2" color="#61DBFB" />
+                        Wordpress
                     </li>
                 </ul>
                 <ul className='hidden md:block'>
