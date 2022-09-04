@@ -7,6 +7,8 @@ import amlaorg from '../public/amlaorg.png';
 import comparison from '../public/comparison.png';
 import reduce from '../public/reduce.png';
 import acc from '../public/acc.png';
+import mip from '../public/mip.png';
+import dsh from '../public/dsh.png';
 
 let projectsList = [
     {
@@ -32,6 +34,18 @@ let projectsList = [
         description: "Reduce my CO2 is a mobile App built using React Native and Consuming API end points built in Laravel",
         image: reduce,
         link: "https://amla.org/",
+    },
+    {
+        title: "MiphTech Company Website",
+        description: "MiphTech is a company that provides IT solutions. It is a responsive website that is built with React and NextJs.",
+        image: mip,
+        link: "https://miphtech.netlify.app/",
+    },
+    {
+        title: "React Dashboard",
+        description: "A dashboard built with React, Syncfusion and styled with TailwindCSS",
+        image: dsh,
+        link: "https://company-dashboard.vercel.app/",
     }
 ]
 const ProjectCard = ({ title, description, image }) => {
